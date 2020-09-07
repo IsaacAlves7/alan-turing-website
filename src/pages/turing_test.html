@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" width="width-scale,initial-scale=1.0" >
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" href="icon.png">
+	<title>Turing Test</title>
+</head>
+<body>
+      <div id="questionário">
+        <br>
+       <h1>Teste de Turing</h1>        
+         <br>
+         <hr>
+         <br>
+     	<br>
+     	<form id="questionario" name ="nome do questionario" method = "post" action="resposta.php">
+         <p> 1 - Marque a afirmação que contém os componentes da Máquina de Turing:</p>
+         <br>
+         <input type="radio" id="a"> A) Disco magnético; Um cabeçote; CPU; Função de transição.
+         <br>
+         <input type="radio" id="b"> B) Uma fita que é dividida em células, uma adjacente à outra; Um registrador de estados; Função de transição; Manivela. 
+         <br>
+         <input type="radio" id="c"> C) Uma fita que é dividida em células, uma adjacente à outra; Um cabeçote; Um registrador de estados; Uma tabela de ação.
+         <br>
+         <input type="radio" id="d"> D) Uma tabela de ação; Um cabeçote; Uma fita que é dividida em células; Transistor;
+         </form>
+         <br>
+         <form id="questionario" name ="nome do questionario" method = "post" action="resposta.php">
+         <p> 2 - Sobre a Máquina de Turing, marque a alternativa <b>correta</b>:</p>
+         <br>
+         <p>_____________ diz à máquina que símbolo escrever, como mover o cabeçote ( ← para esquerda e → para direita) e qual será seu novo estado, dados o símbolo que ele acabou de ler na fita e o estado em que se encontra. Se não houver entrada alguma na tabela para a combinação atual de símbolo e estado então a máquina pára.
+         <br>
+            _____________ pode ler e escrever símbolos na fita e mover-se para a esquerda e para a direita.
+         <br>
+            _____________ armazena o estado da máquina de Turing.
+         <br>
+            _____________ contém um símbolo de algum alfabeto finito. O alfabeto contém um símbolo especial branco (aqui escrito como ¬) e um ou mais símbolos adicionais.</p>
+         <br>
+         <input type="radio" name="q2" value="a"> A) Função de transição; Cabeçote; Registrador de estados; Célula.
+         <br>
+         <input type="radio" name="q2" value="b"> B) Tabela de Ação; Cabeçote; Fita; Registrador de estados.
+         <br>
+         <input type="radio" name="q2" value="c"> C) Fita; Cabeçote; Função de transição; Registrador de estados.
+         <br>
+         <input type="radio" name="q2" value="d"> D) Registrador de estados; Fita; Cabeçote; Função de transição.
+         </form>
+         <br>
+         <form id="questionario" name ="nome do questionario" method = "post" action="resposta.php">
+         <p> 3 - Sobre o processamento da Máquina de Turing, marque a alternativa <b>correta</b>:</p>
+         <br>
+         <p>A ação exata a ser executada é determinada por ______________ que comunica à unidade de controle o que deve ser feito com base na configuração (estado + símbolo corrente da fita) em que a Máquina de Turing se encontra.</p>
+         <br>
+         <input type="radio" name="q3" value="a"> A) um Registrador de estados.
+         <br>
+         <input type="radio" name="q3" value="b"> B) uma Função de transição.
+         <br>
+         <input type="radio" name="q3" value="c"> C) um Cabeçote.
+         <br>
+         <input type="radio" name="q3" value="d"> D) uma Fita.
+         </form>
+         <br>
+           <a href="respostas.html" class="btn">Verificar as respostas</a>
+         <br>
+         <br>
+     </div>
+     <!--O teste de Turing pretende oferecer uma forma de definir se algo pode pensar ou não. Para responder à pergunta “os computadores podem pensar?”, precisamos de um critério para especificar o que pode ser considerado pensamento.
+
+Como medimos o pensamento humano? Uma das formas de fazer isso é através de testes de QI, que consistem em uma série de problemas cognitivos. Vamos supor que um computador possa fazer a mesma pontuação que uma pessoa comum. Esse resultado seria uma pontuação de 100. Se essa pontuação é uma medida da inteligência humana, por que não deveríamos reconhecer que os computadores são capazes de pensar se forem tão bem num teste como esse?
+
+Em nossa vida cotidiana, é claro, não fornecemos testes de inteligência uns aos outros. No entanto, podemos reconhecer que outras pessoas têm inteligência normal. Como? Uma maneira é conversar com elas. Se nos dão respostas razoáveis no contexto de uma conversa, estamos inclinados a dizer que têm inteligência normal. É essa ideia básica que está por trás do teste de Turing.
+
+Em 1637, Descartes alegou que ser capaz de usar a linguagem exibia uma habilidade que separava definitivamente os seres humanos das máquinas. Ele imaginou que um robô muito sofisticado poderia ser projetado para proferir palavras e até mesmo dizer “ai” se você tocasse em um lugar específico. No entanto, Descartes insistiu que uma máquina nunca teria a versatilidade da racionalidade humana.
+
+Partindo de pensamentos como esses, em 1950 o matemático britânico Alan Turing propôs um teste para determinar se um computador pode pensar ou não. Turing é considerado o pai fundador da moderna ciência da computação. Embora ele próprio nunca tenha construído um computador,  estabeleceu os fundamentos teóricos e matemáticos essenciais para projetar nossos computadores modernos.
+
+Como funciona o Teste de Turing
+Vamos considerar uma versão contemporânea de sua proposta, que desde então se tornou imortalizada como o Teste de Turing (o próprio Turing chamou de “jogo da imitação”).
+
+Vamos supor que você e vários outros juízes estejam sentados em uma sala na frente de um terminal de computador. Seu terminal está se comunicando com um terminal em outra sala. Você se comunica interativamente com a pessoa invisível na outra sala digitando perguntas no teclado e lendo as respostas da outra pessoa no monitor. A principal característica do teste é que em algumas das sessões você não está se comunicando com uma pessoa de carne e osso, mas com um programa de inteligência artificial sendo executado em um computador.
+
+Teste de Turing
+Esta ilustração é uma representação do Teste de Turing sendo usado decidir se um programa de computador é capaz de pensar. humana. O homem no meio está alternativamente conduzindo uma conversa com um ser humano vivo (à direita) e com um computador executando um programa de inteligência artificial (à esquerda). Alan Turing afirmou que, se o interrogador não soubesse se estava se comunicando com um humano ou com um computador, isso provaria que o computador era capaz de pensar.
+
+A alegação de Turing era de que, se o programa de computador pudesse enganar um grupo de juízes, achando que eles estavam se comunicando com um ser humano em uma porcentagem significativa do tempo, esse engano seria a prova de que o programa de computador era capaz de pensar. Assim, Turing substituiu a pergunta abstrata e um tanto vaga — “os computadores podem pensar?” — por um teste operacional de inteligência — “os computadores podem passar no Teste de Turing?”
+
+A teoria por trás desse teste pode ser resumida pelo clichê: “come como um pato, anda como um pato e grita como um pato — é um pato!” Em outras palavras, se as respostas de um computador preenchem os critérios que usamos para julgar que um humano é pensa, então devemos dizer que o computador também pensa.
+
+Turing acreditava que um dia os computadores passariam no teste
+Descartes estava convencido de que as máquinas nunca poderiam ser inteligentes porque elas não têm mentes imateriais e ele achava que ter tal mente era necessário para pensar. Com base na tecnologia de sua época, ele supunha que as máquinas eram mecanicamente rígidas e limitadas nos tipos de operações que podiam realizar. Ele também acreditava que a compreensão da linguagem requer uma mente que possua a capacidade de processar uma variedade infinita de sentenças.
+
+Por isso, Descartes argumentou que entender a linguagem era um critério que poderia ser usado para distinguir as respostas das máquinas da inteligência genuína. O argumento de Descartes poderia ser resumido desta maneira:
+
+As máquinas têm o tipo de inteligência que temos, se e somente se puderem entender a linguagem.
+Máquinas não podem entender a linguagem.
+Portanto, as máquinas não podem ter o tipo de inteligência que temos.
+Alan Turing concordou com a primeira premissa de Descartes, mas estava otimista sobre as habilidades das futuras máquinas. Consequentemente, seu argumento era:
+
+As máquinas têm o tipo de inteligência que temos, se e somente se puderem entender a linguagem.
+Máquinas podem entender a linguagem.
+Portanto, as máquinas podem ter o tipo de inteligência que temos.
+Embora Turing percebesse que as máquinas de sua época não podiam passar no Teste de Turing, ele acreditava que as máquinas do futuro seriam tecnologicamente capazes. Na verdade, ele afirmou que no ano 2000 (50 anos a partir do momento em que ele escrevia), as máquinas estariam enganando os interrogadores humanos em uma porcentagem significativa do tempo.--"">
+
+</body>
+</html>

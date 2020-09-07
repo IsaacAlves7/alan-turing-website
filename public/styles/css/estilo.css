@@ -1,0 +1,252 @@
+
+ html{
+    background: url(4k.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+html,body{
+      height:100%;
+}
+
+*{
+  margin:0;
+  padding:0;
+}
+        
+p{
+  color:white;
+  margin-top:5px;
+  margin-left:5px;
+  margin-right:5px;
+  font-size:25.5px;
+  font-family:"Arial";
+}
+
+h1{
+  font-size:50px;
+  color:white;
+  text-align:center;
+  text-shadow:0px 0px 4px black;
+  font-family:"Astronaut"; 
+}
+
+h2{
+  font-size:40px;
+  color:white;
+  text-align:center;
+  text-shadow:0px 0px 4px black;
+  font-family:"Astronaut"; 
+}
+
+a{
+  text-align:center;
+  color:white;
+ font-size:20px;
+}
+
+img{
+  background-color:#000000;
+  border:2px solid #1C1C1C;
+  width:400px;
+  height:300px;
+  padding:20px;
+  padding-top:20px;
+  padding-left:20px;
+  margin:10px 20px 20px 0px ;
+}
+
+table{
+    color:#FFFF00;
+    font-family:"Times New Roman";
+    font-size:20px;
+}
+
+footer{
+    text-align:center;
+    padding:10px 10px 10px 10px;
+    background-color:gray;
+    padding-top:10px relative;
+    position:relative;
+    margin-top:600px;
+    bottom:0;
+    right:0
+}
+
+footer p{
+    padding-left:5%;
+    padding-top:1.5%;padding-bottom:1.5%;
+}
+
+/*IDS*/
+
+#página{
+      margin-top:10px;
+      padding:10px;
+}     
+
+/*ID e CLASS*/
+
+.menu{
+  padding:10px;
+  background:linear-gradient(to right, #581d22,brown);
+  border:2px solid #581d22;
+  text-align:center;
+}
+.menu a{
+  padding:5px;  
+  font-family:"Arial";
+  font-size:20px;
+  color:white;  
+  text-decoration: none; 
+}
+.imagens{
+      background-size:20px;
+}
+
+#pth{
+  background-image: linear-gradient(to bottom,#581d22,brown);
+  min-height:100%;
+  border-radius:0px;
+  border:4px solid brown;
+  padding:10px;
+}
+
+.galeria{
+  margin:10px 50px;
+}
+
+.galeria img{
+  transition:1s;
+  padding:5px/*20px*/;
+  width:300px/*400px*/;
+}
+
+.galeria img:hover {
+     filter: grayscale(100%);
+     transform:scale(1.1);
+}
+
+/*Instalador de fontes (@font-face)*/
+
+@font-face{
+  font-family:"04b03";
+  src:url("header/04b03.TTF"), local("header/04b03.TTF"); 
+}
+
+/*--------------------------Menu da Página---------------------------*/
+
+.menu p{
+  position:absolute;
+  left:44%;
+  top:10px;
+  font-family:"Astronaut II";
+  font-size:30px;
+}
+
+.menu{
+  padding:10px 10px;
+  background:linear-gradient(to right,black,rgb(22, 21, 21));
+  border:2px solid rgb(8, 1, 1);
+  position:absolute;
+  left:0px;
+  right:0px;
+}
+
+.menu a{
+  padding:10px;  
+  font-family:"Astronaut II";
+  font-size:25.5px;
+  color:white;  
+  text-decoration: none;
+  text-shadow:2px 2px 2px #000000;
+  
+}
+
+.menu a:hover{
+  background: brown;
+  color:#581d22;
+  filter:scale(100%);
+  transform:scale(2.0);
+  transition:1s;
+}
+
+.menu a:active{
+  position:block;
+  top: 5px;
+  box-shadow: none;
+}
+
+/*------------------------menu lateral-----------------------------*/
+
+label img{
+  width:40px; height:40px;
+  border:none;
+  padding:0px;
+  margin:0px;
+  background:transparent;
+  transform:none;
+}
+
+input[type="checkbox"]
+{
+  display:none;
+}
+
+nav{
+  background-color:rgba(16, 16, 16, 0.877) 
+}
+
+nav{
+  width:550px;
+  left:-555px;
+  height:880px;
+  position:absolute;
+  transition: all 0.5s;
+}
+
+nav ul{
+  list-style: none;
+  top:70px;
+  position:center;
+  width:100%;
+}
+
+nav a{
+  font-family:"Astronaut II";
+  display:relative;
+  padding:20px 2px;
+  color:black;
+  left:90px;
+  text-align:justify;
+  position:center;
+}
+
+nav a:hover{
+  background-color:brown;
+  color:black;
+}
+
+
+label{
+  padding:15px;
+  z-index:1;
+}
+
+label:active{
+  position: relative;
+  top: 5px;
+  box-shadow:none;
+}
+
+input[type="label"]:checked ~ img
+{
+  transform:rotate(90deg);
+}
+
+input[type="checkbox"]:checked ~ nav
+{
+  transform: translateX(550px)
+}
