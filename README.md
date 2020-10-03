@@ -1,2 +1,2 @@
-# Computing Museum
+# Computer Science Museum
 
